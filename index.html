@@ -54,19 +54,20 @@
 
     function checkCollisions(item) {
       if (
+        item.position.y + item.velocity.y + item.newimg.height >
+          window.innerHeight ||
+        item.position.y + item.velocity.y < 0
+      ) {
+        console.log(item.position.y, window.innerHeight);
+        item.velocity.y = -item.velocity.y;
+      }
+
+      if (
         item.position.x + item.velocity.x + item.newimg.width >
           window.innerWidth ||
         item.position.x + item.velocity.x < 0
       ) {
-        item.velocity = item.velocity.x;
-      }
-
-      if (
-        item.position.y + item.velocity.y + item.newimg.heihgt >
-          window.innerHeight ||
-        item.position.y + item.velocity.y < 0
-      ) {
-        item.velocity.y = -item.velocity.y;
+        item.velocity.x = -item.velocity.x;
       }
     }
 
