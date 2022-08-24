@@ -10,7 +10,7 @@ TODO change content
 
 This is one of the exercises of the MITxPro-MERN course, on the "Styles and Bootstap" module.
 
-This exercise consists generates a PacMan by clicking on the button "Add PacMan". By clicking on the button "Start Game", the PacMen will start moving randomly all over the screen bouncing on the edges. 
+This exercise generates a PacMan by clicking on the button "Add PacMan". By clicking on the button "Start Game", the PacMen will start moving randomly all over the screen bouncing on the edges. 
 
 ## Installaion
 
